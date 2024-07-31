@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Prediction Game</h1>
+        <div class="explanation">
+            <p>Welcome to the Stock Prediction Game! Your task is to predict the stock price for the 11th day based on the prices of the previous 10 days. Use the average price and the given strategy to help make your prediction. There are 5 rounds in total. Good luck!</p>
+        </div>
+        <div id="average"></div>
+        <div id="strategy"></div>
+        <div id="barChartContainer">
+            <canvas id="barChart"></canvas>
+        </div>
+        <div class="controls">
+            <input type="text" id="prediction" placeholder="Predict the stock price for day 11">
+            <button onclick="submitPrediction()">Predict</button>
+        </div>
+        <div class="feedback" id="feedback"></div>
+        <div class="score" id="score"></div>
+        <div class="round" id="round"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
